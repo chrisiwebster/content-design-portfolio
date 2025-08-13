@@ -25,10 +25,10 @@
 		"title": "Webhook troubleshooting self-service",
 		"description": "Redesigned webhook troubleshooting to connect scheduled + manual retries, clarify errors, and streamline resolution.",
 		"tags": ["Developer UX", "Reliability"],
-		"cover": "images/webhooks-troubleshoot-4.png",
+		"cover": "images/webhook-troubleshoot-4.png",
 		"images": [
-			"images/webhooks-troubleshoot-4.png",
-			"mages/webhooks-troubleshoot-2.png"
+			"images/webhook-troubleshoot-4.png",
+			"images/webhook-troubleshoot-2.png"
 		],
 		"summary": "Connected scheduled and manual retries, clarified errors and states, and made failures diagnosable without support.",
 		"context": "Developers struggled to diagnose webhook failures and escalated to Solutions Engineers. Retry logic across automated and manual paths was unclear.",

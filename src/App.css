@@ -151,12 +151,16 @@ h1 {
 	display: grid;
 	gap: 20px;
 	grid-template-columns: 1fr;
+	/* add this for tidy top alignment */
+	align-items: start;
 }
 @media (min-width: 900px) {
 	.modal .cols {
-		grid-template-columns: 2fr 1fr;
+		/* was: grid-template-columns: 2fr 1fr; */
+		grid-template-columns: 1fr 1fr;
 	}
 }
+
 .modal .side h4 {
 	margin: 0 0 8px;
 }
