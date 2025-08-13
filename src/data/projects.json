@@ -1,0 +1,102 @@
+[
+	{
+		"id": "status-page",
+		"title": "Structured, merchant-friendly status page",
+		"role": "Content strategy, taxonomy, cross-channel comms",
+		"tags": ["Comms", "Systems", "Merchant UX"],
+		"summary": "Designed and implemented a new merchant-facing status page, translating internal incident data into clear, scan-friendly language and categories.",
+		"images": [
+			"/images/status-page-1.png",
+			"/images/status-page-2.png",
+			"/images/status-page-3.png"
+		],
+		"body": "Summary\\nLed the content strategy for a new merchant-facing status page, transforming incident comms into a clear, structured, scalable system.\\n\\nContext\\nMerchants were confused by internal severity codes; we needed human, impact-based language.\\n\\nRole\\nOwned content strategy and mapping to internal systems.",
+		"approach": [
+			"Defined incident taxonomy and merchant-friendly service groupings",
+			"Tiered incident model + reusable message patterns",
+			"Aligned live data to external language with Engineering/IR"
+		],
+		"impact": [
+			"Reduced merchant uncertainty via real-time plain-language updates",
+			"Consistent templates across status page, email, and in-product notifications",
+			"Scalable taxonomy mapped to internal services"
+		]
+	},
+	{
+		"id": "webhook-troubleshooting",
+		"title": "Webhook troubleshooting self-service",
+		"role": "Content design, terminology, sequencing, specs",
+		"tags": ["Developer UX", "Reliability"],
+		"summary": "Redesigned webhook troubleshooting to connect scheduled + manual retries, clarify errors, and streamline resolution.",
+		"images": [
+			"/images/webhook-troubleshoot-1.png",
+			"/images/webhook-troubleshoot-2.png",
+			"/images/webhook-troubleshoot-3.png"
+		],
+		"body": "Redesigned the webhook troubleshooting experience to connect scheduled retries with manual retries, clarify error messaging, and streamline resolution.\\n\\nContext\\nTeams struggled to diagnose webhook failures and escalated to SEs and Merchant Care.\\n\\nRole\\nLed content design: refined terminology, improved sequencing, and delivered QA-ready specs.",
+		"approach": [
+			"Connected scheduled and manual retries within the UI",
+			"Raised the quality bar for error/state messaging",
+			"Created consistent terminology + hierarchy; shipped QA-ready spec"
+		],
+		"impact": [
+			"4.5/5 design clarity; 4.1/5 usefulness",
+			"70%+ self-service rate",
+			"~2 hrs/week SE time saved; strong merchant feedback"
+		]
+	},
+	{
+		"id": "ia-onboarding",
+		"title": "Clear onboarding for a redesigned information architecture",
+		"role": "UX content, change management, governance",
+		"tags": ["Navigation", "Onboarding", "Merchant UX"],
+		"summary": "Onboarded users to a major navigation restructure with task-focused coach marks and governance for future changes.",
+		"images": [
+			"/images/ia-onboarding-2.png",
+			"/images/ia-onboarding-3.png",
+			"/images/ia-onboarding-4.png",
+			"/images/ia-onboarding-5.png"
+		],
+		"body": "Summary//Led the content strategy for onboarding merchants to a major navigation restructure, helping them adapt quickly and preventing support spikes.\\n\\nRole\\nShaped messaging end-to-end, made final content calls, and mapped old→new IA relationships.",
+		"approach": [
+			"Introduced coach marks + in-context cues for high-visibility changes",
+			"Directed messaging from concept to sign-off under tight timelines",
+			"Mapped old→new IA to reduce relearning friction"
+		],
+		"impact": [
+			"Ease-of-access rated 5/5 post-launch",
+			"Navigation-related support spikes avoided",
+			"Governance model established for future IA updates"
+		]
+	},
+	{
+		"id": "tooltip-standards",
+		"title": "Tooltip & popover standards",
+		"role": "Design systems, accessibility, guidance",
+		"tags": ["Systems", "Accessibility"],
+		"summary": "Directive rules for tooltips and popovers, embedded in the design system with accessible examples and limits.",
+		"images": ["/images/tooltips-1.png", "/images/tooltips-2.png"],
+		"body": "Summary\\nCreated definitive guidance for tooltip/popover usage, reducing misuse, improving accessibility, and embedding rules into the design system.\\n\\nRole\\nDefined principles and directive rules; integrated guidance into the design system.",
+		"approach": [
+			"Set a core principle: tooltips are supplemental, not essential",
+			"Moved guidance from suggestive → directive; clarified tooltip vs popover vs inline",
+			"Added max lengths and component links in the DS"
+		],
+		"impact": [
+			"Reduced ambiguity and misuse across product",
+			"Improved accessibility with explicit labels + colour support",
+			"Fewer review cycles; faster design decisions"
+		]
+	},
+	{
+		"id": "payment-intelligence",
+		"title": "Payment Intelligence (coming soon)",
+		"role": "Analytics UX, insights, guidance",
+		"tags": ["Analytics", "Insights"],
+		"summary": "Placeholder entry. We'll drop in the final case study once you're ready.",
+		"images": ["/images/pi-1.png"],
+		"body": "Summary\\nComing soon — adding once work is complete.",
+		"approach": [],
+		"impact": []
+	}
+]
