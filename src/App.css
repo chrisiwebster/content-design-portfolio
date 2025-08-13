@@ -4,7 +4,7 @@
 	--text: #e6e6e6;
 	--muted: #a3a3a3;
 	--border: #252525;
-	--accent: #ffffff;
+	--accent: #a78bfa; /* soft purple */
 }
 * {
 	box-sizing: border-box;
@@ -21,6 +21,16 @@ body {
 	font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
 		"Helvetica Neue", Arial;
 }
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff; /* or a lighter shade of accent */
+}
+
 .app {
 	max-width: 1120px;
 	margin: 0 auto;
@@ -59,7 +69,7 @@ h1 {
 }
 .project-card:hover {
 	transform: translateY(-2px);
-	border-color: #2f2f2f;
+	border-color: var(--accent);
 }
 
 .card-cover {
@@ -231,4 +241,132 @@ h1 {
 	to {
 		transform: scale(1);
 	}
+}
+
+/* Sections */
+.section-title {
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	margin: 28px 0 12px;
+	color: var(--accent);
+}
+
+/* About block */
+.about {
+	background: linear-gradient(180deg, #141414, #0f0f0f);
+	border: 1px solid var(--border);
+	border-radius: 16px;
+	padding: 16px;
+	margin: 12px 0 24px;
+}
+.about p {
+	margin: 0;
+	color: var(--muted);
+	line-height: 1.65;
+}
+
+/* Skills snapshot */
+.skills {
+	display: grid;
+	gap: 14px;
+	grid-template-columns: 1fr;
+	margin-bottom: 24px;
+}
+@media (min-width: 720px) {
+	.skills {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.skill {
+	background: #101010;
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	padding: 14px;
+}
+.skill h3 {
+	font-size: 14px;
+	margin: 0 0 6px;
+}
+.skill p {
+	color: var(--muted);
+	margin: 0;
+	line-height: 1.6;
+}
+
+/* Tighten spacing under hero lede to the About card */
+.lede {
+	margin-bottom: 16px;
+}
+/* ===== Accent pass (safe to append) ===== */
+
+/* Section headings that should pop */
+.section-title {
+	color: var(--accent);
+}
+
+/* Links use accent */
+a {
+	color: var(--accent);
+	text-underline-offset: 2px;
+}
+a:hover {
+	color: #fff;
+}
+
+/* Card hovers pick up accent */
+.project-card:hover {
+	border-color: var(--accent);
+}
+.project-card:hover .card-title {
+	color: var(--accent);
+}
+
+/* Tags get a subtle accent on hover/focus */
+.tag:hover,
+.tag:focus-visible {
+	border-color: var(--accent);
+	color: var(--text);
+	outline: none;
+}
+
+/* Modal sub-headings use accent for quick scanning */
+.modal h4 {
+	color: var(--accent);
+}
+
+/* Modal close button states */
+.modal .close:hover,
+.modal .close:focus-visible {
+	border-color: var(--accent);
+	color: var(--accent);
+	outline: none;
+}
+
+/* Gallery thumbs: make the anchor the focus target and show accent ring */
+.modal .gallery a {
+	display: block;
+	border-radius: 12px;
+}
+.modal .gallery img {
+	transition: box-shadow 0.2s ease;
+}
+.modal .gallery a:hover img,
+.modal .gallery a:focus-visible img {
+	box-shadow: 0 0 0 2px var(--accent);
+	outline: none;
+}
+
+/* Keyboard focus rings for core interactive bits */
+.project-card:focus-visible,
+.modal .close:focus-visible {
+	box-shadow: 0 0 0 2px var(--accent);
+	outline: none;
+	border-radius: 12px;
+}
+
+/* Selection color */
+::selection {
+	background: var(--accent);
+	color: #0a0a0a;
 }
