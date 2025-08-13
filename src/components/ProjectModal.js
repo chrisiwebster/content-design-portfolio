@@ -138,6 +138,8 @@ export default function ProjectModal({ project, onClose }) {
 						justifyContent: "center",
 						zIndex: 1000,
 						cursor: "zoom-out",
+						opacity: 1,
+						animation: "fadeIn 0.3s ease forwards",
 					}}
 				>
 					<img
@@ -147,6 +149,8 @@ export default function ProjectModal({ project, onClose }) {
 							maxWidth: "90%",
 							maxHeight: "90%",
 							boxShadow: "0 0 20px rgba(0,0,0,0.5)",
+							transform: "scale(1)",
+							animation: "scaleIn 0.3s ease forwards",
 						}}
 					/>
 				</div>
