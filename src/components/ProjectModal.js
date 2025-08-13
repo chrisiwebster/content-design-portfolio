@@ -1,15 +1,18 @@
 import React, { useEffect } from "react";
 
+const withBase = (p) =>
+	p ? `${process.env.PUBLIC_URL}/${String(p).replace(/^\//, "")}` : p;
+
 export default function ProjectModal({ project, onClose }) {
 	useEffect(() => {
 		if (!project) return;
 		const onKey = (e) => e.key === "Escape" && onClose();
-		const prevOverflow = document.body.style.overflow;
+		const prev = document.body.style.overflow;
 		document.body.style.overflow = "hidden";
 		window.addEventListener("keydown", onKey);
 		return () => {
 			window.removeEventListener("keydown", onKey);
-			document.body.style.overflow = prevOverflow;
+			document.body.style.overflow = prev;
 		};
 	}, [project, onClose]);
 
@@ -29,14 +32,16 @@ export default function ProjectModal({ project, onClose }) {
 				</button>
 
 				<h2 id={`h-${project.id}`}>{project.title}</h2>
-				{project.role && <div className="role">{project.role}</div>}
+				{project.tags?.length ? (
+					<div className="role">{project.tags.join(" · ")}</div>
+				) : null}
 
 				{project.images?.length > 0 && (
 					<div className="gallery">
 						{project.images.map((src, i) => (
 							<img
 								key={i}
-								src={src}
+								src={withBase(src)}
 								alt={`${project.title} — screenshot ${i + 1}`}
 								loading="lazy"
 								decoding="async"
@@ -47,7 +52,24 @@ export default function ProjectModal({ project, onClose }) {
 
 				<div className="cols">
 					<div className="body">
-						<p style={{ whiteSpace: "pre-wrap" }}>{project.body}</p>
+						{project.summary && (
+							<>
+								<h4>Summary</h4>
+								<p>{project.summary}</p>
+							</>
+						)}
+						{project.context && (
+							<>
+								<h4>Context</h4>
+								<p>{project.context}</p>
+							</>
+						)}
+						{project.role && (
+							<>
+								<h4>Role</h4>
+								<p>{project.role}</p>
+							</>
+						)}
 					</div>
 					<div className="side">
 						{project.approach?.length > 0 && (

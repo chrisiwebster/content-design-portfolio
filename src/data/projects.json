@@ -2,61 +2,64 @@
 	{
 		"id": "status-page",
 		"title": "Structured, merchant-friendly status page",
-		"role": "Content strategy, taxonomy, cross-channel comms",
+		"description": "Designed and implemented a new merchant-facing status page, translating internal incident data into clear, scan-friendly language and categories.",
 		"tags": ["Comms", "Systems", "Merchant UX"],
-		"summary": "Designed and implemented a new merchant-facing status page, translating internal incident data into clear, scan-friendly language and categories.",
-		"images": ["images/status-page-2.png", "images/status-page-3.png"],
-		"body": "Summary\nLed the content strategy for a new merchant-facing status page, transforming incident comms into a clear, structured, scalable system.\n\nContext\nMerchants were confused by internal severity codes; we needed human, impact-based language.\n\nRole\nOwned content strategy and mapping to internal systems.",
+		"cover": "images/status-page-1.png",
+		"images": [
+			"images/status-page-1.png",
+			"images/status-page-2.png",
+			"images/status-page-3.png",
+			"images/status-page-4.png"
+		],
+		"summary": "Created a merchant-facing status page that surfaces incidents in plain language and clear categories, staying in sync with engineering data.",
+		"context": "Before, incident comms used internal SEV codes and technical terms, so merchants couldn’t quickly gauge impact. We needed a page that spoke the merchant’s language while mapping to our internal systems.",
+		"role": "Led content strategy: defined service groupings, status keys, and message patterns; partnered with Engineering and Incident Response to connect live data to external language.",
 		"approach": [
 			"Defined incident taxonomy and merchant-friendly service groupings",
-			"Tiered incident model + reusable message patterns",
-			"Aligned live data to external language with Engineering/IR"
+			"Designed a tiered incident model + reusable update templates (status page, email, in-product)",
+			"Aligned internal data fields to external copy with Engineering/IR"
 		],
 		"impact": [
-			"Reduced merchant uncertainty via real-time plain-language updates",
-			"Consistent templates across status page, email, and in-product notifications",
+			"Reduced uncertainty during incidents via real-time, plain-language updates",
+			"Consistent incident language across channels",
 			"Scalable taxonomy mapped to internal services"
 		]
 	},
 	{
 		"id": "webhook-troubleshooting",
 		"title": "Webhook troubleshooting self-service",
-		"role": "Content design, terminology, sequencing, specs",
+		"description": "Redesigned webhook troubleshooting to connect scheduled + manual retries, clarify errors, and streamline resolution.",
 		"tags": ["Developer UX", "Reliability"],
-		"summary": "Redesigned webhook troubleshooting to connect scheduled + manual retries, clarify errors, and streamline resolution.",
-		"images": [
-			"images/webhook-troubleshoot-4.png",
-			"images/webhook-troubleshoot-2.png"
-		],
-		"body": "Redesigned the webhook troubleshooting experience to connect scheduled retries with manual retries, clarify error messaging, and streamline resolution.\n\nContext\nTeams struggled to diagnose webhook failures and escalated to SEs and Merchant Care.\n\nRole\nLed content design: refined terminology, improved sequencing, and delivered QA-ready specs.",
+		"cover": "images/webhooks-1.png",
+		"images": ["images/webhooks-1.png"],
+		"summary": "Connected scheduled and manual retries, clarified errors and states, and made failures diagnosable without support.",
+		"context": "Developers struggled to diagnose webhook failures and escalated to Solutions Engineers. Retry logic across automated and manual paths was unclear.",
+		"role": "Owned content design: terminology, sequencing, and QA-ready specs; facilitated alignment across PM, Engineering, and Support.",
 		"approach": [
-			"Connected scheduled and manual retries within the UI",
+			"Connected scheduled + manual retries within the UI",
 			"Raised the quality bar for error/state messaging",
-			"Created consistent terminology + hierarchy; shipped QA-ready spec"
+			"Standardised terms and information hierarchy; shipped QA-ready spec"
 		],
 		"impact": [
 			"4.5/5 design clarity; 4.1/5 usefulness",
-			"70%+ self-service rate",
+			"70%+ self-service rate for troubleshooting",
 			"~2 hrs/week SE time saved; strong merchant feedback"
 		]
 	},
 	{
 		"id": "ia-onboarding",
 		"title": "Clear onboarding for a redesigned information architecture",
-		"role": "UX content, change management, governance",
+		"description": "Onboarded users to a major navigation restructure with task-focused coach marks and governance for future changes.",
 		"tags": ["Navigation", "Onboarding", "Merchant UX"],
-		"summary": "Onboarded users to a major navigation restructure with task-focused coach marks and governance for future changes.",
-		"images": [
-			"images/ia-onboarding-2.png",
-			"images/ia-onboarding-3.png",
-			"images/ia-onboarding-4.png",
-			"images/ia-onboarding-5.png"
-		],
-		"body": "Summary//Led the content strategy for onboarding merchants to a major navigation restructure, helping them adapt quickly and preventing support spikes.\n\nRole\nShaped messaging end-to-end, made final content calls, and mapped old→new IA relationships.",
+		"cover": "images/ia-1.png",
+		"images": ["images/ia-1.png", "images/ia-2.png", "images/ia-3.png"],
+		"summary": "Introduced coach marks and navigation cues to help merchants adapt quickly to a new IA while avoiding support spikes.",
+		"context": "A large navigation restructure risked confusion and increased support tickets if not communicated in-product.",
+		"role": "Led content decisions through critiques and sign-off under tight timelines; mapped old→new IA and set governance for future changes.",
 		"approach": [
-			"Introduced coach marks + in-context cues for high-visibility changes",
-			"Directed messaging from concept to sign-off under tight timelines",
-			"Mapped old→new IA to reduce relearning friction"
+			"Directed messaging end-to-end; final content calls in critiques",
+			"Used coach marks + in-context cues for high-visibility changes",
+			"Mapped old→new IA relationships; set governance rules"
 		],
 		"impact": [
 			"Ease-of-access rated 5/5 post-launch",
@@ -67,30 +70,34 @@
 	{
 		"id": "tooltip-standards",
 		"title": "Tooltip & popover standards",
-		"role": "Design systems, accessibility, guidance",
+		"description": "Directive rules for tooltips and popovers, embedded in the design system with accessible examples and limits.",
 		"tags": ["Systems", "Accessibility"],
-		"summary": "Directive rules for tooltips and popovers, embedded in the design system with accessible examples and limits.",
+		"cover": "images/tooltips-1.png",
 		"images": ["images/tooltips-1.png", "images/tooltips-2.png"],
-		"body": "Summary\nCreated definitive guidance for tooltip/popover usage, reducing misuse, improving accessibility, and embedding rules into the design system.\n\nRole\nDefined principles and directive rules; integrated guidance into the design system.",
+		"summary": "Turned fuzzy guidance into directive standards with accessibility baked in, reducing misuse and review cycles.",
+		"context": "Tooltips and popovers were inconsistently used, causing usability issues and extra review cycles.",
+		"role": "Defined principles and rules; integrated guidance into the design system; partnered with design/engineering for adoption.",
 		"approach": [
-			"Set a core principle: tooltips are supplemental, not essential",
-			"Moved guidance from suggestive → directive; clarified tooltip vs popover vs inline",
-			"Added max lengths and component links in the DS"
+			"Set core principle: tooltips are supplemental, not essential",
+			"Clarified tooltip vs popover vs inline text; set max lengths",
+			"Added explicit labels and colour-blind-friendly indicators; linked DS components"
 		],
 		"impact": [
 			"Reduced ambiguity and misuse across product",
-			"Improved accessibility with explicit labels + colour support",
-			"Fewer review cycles; faster design decisions"
+			"Improved accessibility",
+			"Faster, fewer review cycles"
 		]
 	},
 	{
 		"id": "payment-intelligence",
 		"title": "Payment Intelligence (coming soon)",
-		"role": "Analytics UX, insights, guidance",
+		"description": "Placeholder entry for upcoming analytics/insights work.",
 		"tags": ["Analytics", "Insights"],
-		"summary": "Placeholder entry. We'll drop in the final case study once you're ready.",
+		"cover": "images/pi-1.png",
 		"images": ["images/pi-1.png"],
-		"body": "Summary\nComing soon — adding once work is complete.",
+		"summary": "Coming soon — final case study will be added after launch.",
+		"context": "",
+		"role": "",
 		"approach": [],
 		"impact": []
 	}

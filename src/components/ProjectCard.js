@@ -1,7 +1,10 @@
 import React from "react";
 
+const withBase = (p) =>
+	p ? `${process.env.PUBLIC_URL}/${String(p).replace(/^\//, "")}` : p;
+
 export default function ProjectCard({ project, onClick }) {
-	const cover = project.images?.[0];
+	const cover = project.cover || project.images?.[0];
 	return (
 		<div
 			className="project-card"
@@ -15,7 +18,7 @@ export default function ProjectCard({ project, onClick }) {
 			<div className="card-cover">
 				{cover && (
 					<img
-						src={cover}
+						src={withBase(cover)}
 						alt={`${project.title} — cover`}
 						loading="lazy"
 						decoding="async"
@@ -23,7 +26,7 @@ export default function ProjectCard({ project, onClick }) {
 				)}
 			</div>
 			<div className="card-title">{project.title}</div>
-			<div className="card-summary">{project.summary}</div>
+			<div className="card-summary">{project.description}</div>
 			<div className="tagrow">
 				{(project.tags || []).map((t) => (
 					<span key={t} className="tag">
