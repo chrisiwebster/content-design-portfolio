@@ -39,13 +39,21 @@ export default function ProjectModal({ project, onClose }) {
 				{project.images?.length > 0 && (
 					<div className="gallery">
 						{project.images.map((src, i) => (
-							<img
+							<a
 								key={i}
-								src={withBase(src)}
-								alt={`${project.title} — screenshot ${i + 1}`}
-								loading="lazy"
-								decoding="async"
-							/>
+								href={withBase(src)}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src={withBase(src)}
+									alt={`${project.title} — screenshot ${
+										i + 1
+									}`}
+									loading="lazy"
+									decoding="async"
+								/>
+							</a>
 						))}
 					</div>
 				)}
