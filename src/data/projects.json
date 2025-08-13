@@ -4,13 +4,8 @@
 		"title": "Structured, merchant-friendly status page",
 		"description": "Designed and implemented a new merchant-facing status page, translating internal incident data into clear, scan-friendly language and categories.",
 		"tags": ["Comms", "Systems", "Merchant UX"],
-		"cover": "images/status-page-1.png",
-		"images": [
-			"images/status-page-1.png",
-			"images/status-page-2.png",
-			"images/status-page-3.png",
-			"images/status-page-4.png"
-		],
+		"cover": "images/status-page-2.png",
+		"images": ["images/status-page-2.png", "images/status-page-3.png"],
 		"summary": "Created a merchant-facing status page that surfaces incidents in plain language and clear categories, staying in sync with engineering data.",
 		"context": "Before, incident comms used internal SEV codes and technical terms, so merchants couldn’t quickly gauge impact. We needed a page that spoke the merchant’s language while mapping to our internal systems.",
 		"role": "Led content strategy: defined service groupings, status keys, and message patterns; partnered with Engineering and Incident Response to connect live data to external language.",
@@ -30,8 +25,11 @@
 		"title": "Webhook troubleshooting self-service",
 		"description": "Redesigned webhook troubleshooting to connect scheduled + manual retries, clarify errors, and streamline resolution.",
 		"tags": ["Developer UX", "Reliability"],
-		"cover": "images/webhooks-1.png",
-		"images": ["images/webhooks-1.png"],
+		"cover": "images/webhooks-troubleshoot-4.png",
+		"images": [
+			"images/webhooks-troubleshoot-4.png",
+			"mages/webhooks-troubleshoot-2.png"
+		],
 		"summary": "Connected scheduled and manual retries, clarified errors and states, and made failures diagnosable without support.",
 		"context": "Developers struggled to diagnose webhook failures and escalated to Solutions Engineers. Retry logic across automated and manual paths was unclear.",
 		"role": "Owned content design: terminology, sequencing, and QA-ready specs; facilitated alignment across PM, Engineering, and Support.",
@@ -51,8 +49,13 @@
 		"title": "Clear onboarding for a redesigned information architecture",
 		"description": "Onboarded users to a major navigation restructure with task-focused coach marks and governance for future changes.",
 		"tags": ["Navigation", "Onboarding", "Merchant UX"],
-		"cover": "images/ia-1.png",
-		"images": ["images/ia-1.png", "images/ia-2.png", "images/ia-3.png"],
+		"cover": "images/ia-onboarding-2.png",
+		"images": [
+			"images/ia-onboarding-2.png",
+			"images/ia-onboarding-3.png",
+			"images/ia-onboarding-4.png",
+			"images/ia-onboarding-5.png"
+		],
 		"summary": "Introduced coach marks and navigation cues to help merchants adapt quickly to a new IA while avoiding support spikes.",
 		"context": "A large navigation restructure risked confusion and increased support tickets if not communicated in-product.",
 		"role": "Led content decisions through critiques and sign-off under tight timelines; mapped old→new IA and set governance for future changes.",
@@ -87,18 +90,5 @@
 			"Improved accessibility",
 			"Faster, fewer review cycles"
 		]
-	},
-	{
-		"id": "payment-intelligence",
-		"title": "Payment Intelligence (coming soon)",
-		"description": "Placeholder entry for upcoming analytics/insights work.",
-		"tags": ["Analytics", "Insights"],
-		"cover": "images/pi-1.png",
-		"images": ["images/pi-1.png"],
-		"summary": "Coming soon — final case study will be added after launch.",
-		"context": "",
-		"role": "",
-		"approach": [],
-		"impact": []
 	}
 ]
