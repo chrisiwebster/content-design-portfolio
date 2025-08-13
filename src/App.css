@@ -150,15 +150,48 @@ h1 {
 .modal .cols {
 	display: grid;
 	gap: 20px;
-	grid-template-columns: 1fr;
-	/* add this for tidy top alignment */
+	grid-template-columns: 1fr; /* mobile: one column */
 	align-items: start;
 }
 @media (min-width: 900px) {
 	.modal .cols {
-		/* was: grid-template-columns: 2fr 1fr; */
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr; /* desktop: even split */
 	}
+}
+.modal .summary-block {
+	grid-column: 1 / -1; /* span both columns */
+}
+.modal .col {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.modal h4 {
+	margin: 0;
+}
+
+.modal .col h4,
+.modal .summary-block h4 {
+	margin-bottom: 0.5rem;
+}
+
+.modal .col p,
+.modal .col ul,
+.modal .summary-block p {
+	margin-top: 0;
+}
+
+/* NEW: make Summary span across both columns */
+.modal .summary-block {
+	grid-column: 1 / -1;
+}
+
+/* NEW: tidy spacing inside each column */
+.modal .col {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .modal .side h4 {

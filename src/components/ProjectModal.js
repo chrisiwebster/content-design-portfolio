@@ -50,14 +50,16 @@ export default function ProjectModal({ project, onClose }) {
 					</div>
 				)}
 
+				{/* Summary spans full width; details split 50/50 */}
 				<div className="cols">
-					<div className="body">
-						{project.summary && (
-							<>
-								<h4>Summary</h4>
-								<p>{project.summary}</p>
-							</>
-						)}
+					{project.summary && (
+						<div className="summary-block">
+							<h4>Summary</h4>
+							<p>{project.summary}</p>
+						</div>
+					)}
+
+					<div className="col">
 						{project.context && (
 							<>
 								<h4>Context</h4>
@@ -71,7 +73,8 @@ export default function ProjectModal({ project, onClose }) {
 							</>
 						)}
 					</div>
-					<div className="side">
+
+					<div className="col">
 						{project.approach?.length > 0 && (
 							<>
 								<h4>Approach</h4>
