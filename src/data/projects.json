@@ -5,12 +5,8 @@
 		"role": "Content strategy, taxonomy, cross-channel comms",
 		"tags": ["Comms", "Systems", "Merchant UX"],
 		"summary": "Designed and implemented a new merchant-facing status page, translating internal incident data into clear, scan-friendly language and categories.",
-		"images": [
-			"images/status-page-1.png",
-			"images/status-page-2.png",
-			"images/status-page-3.png"
-		],
-		"body": "Summary\\nLed the content strategy for a new merchant-facing status page, transforming incident comms into a clear, structured, scalable system.\\n\\nContext\\nMerchants were confused by internal severity codes; we needed human, impact-based language.\\n\\nRole\\nOwned content strategy and mapping to internal systems.",
+		"images": ["images/status-page-2.png", "images/status-page-3.png"],
+		"body": "Summary\nLed the content strategy for a new merchant-facing status page, transforming incident comms into a clear, structured, scalable system.\n\nContext\nMerchants were confused by internal severity codes; we needed human, impact-based language.\n\nRole\nOwned content strategy and mapping to internal systems.",
 		"approach": [
 			"Defined incident taxonomy and merchant-friendly service groupings",
 			"Tiered incident model + reusable message patterns",
@@ -29,11 +25,10 @@
 		"tags": ["Developer UX", "Reliability"],
 		"summary": "Redesigned webhook troubleshooting to connect scheduled + manual retries, clarify errors, and streamline resolution.",
 		"images": [
-			"images/webhook-troubleshoot-1.png",
-			"images/webhook-troubleshoot-2.png",
-			"images/webhook-troubleshoot-3.png"
+			"images/webhook-troubleshoot-4.png",
+			"images/webhook-troubleshoot-2.png"
 		],
-		"body": "Redesigned the webhook troubleshooting experience to connect scheduled retries with manual retries, clarify error messaging, and streamline resolution.\\n\\nContext\\nTeams struggled to diagnose webhook failures and escalated to SEs and Merchant Care.\\n\\nRole\\nLed content design: refined terminology, improved sequencing, and delivered QA-ready specs.",
+		"body": "Redesigned the webhook troubleshooting experience to connect scheduled retries with manual retries, clarify error messaging, and streamline resolution.\n\nContext\nTeams struggled to diagnose webhook failures and escalated to SEs and Merchant Care.\n\nRole\nLed content design: refined terminology, improved sequencing, and delivered QA-ready specs.",
 		"approach": [
 			"Connected scheduled and manual retries within the UI",
 			"Raised the quality bar for error/state messaging",
@@ -57,7 +52,7 @@
 			"images/ia-onboarding-4.png",
 			"images/ia-onboarding-5.png"
 		],
-		"body": "Summary//Led the content strategy for onboarding merchants to a major navigation restructure, helping them adapt quickly and preventing support spikes.\\n\\nRole\\nShaped messaging end-to-end, made final content calls, and mapped old→new IA relationships.",
+		"body": "Summary//Led the content strategy for onboarding merchants to a major navigation restructure, helping them adapt quickly and preventing support spikes.\n\nRole\nShaped messaging end-to-end, made final content calls, and mapped old→new IA relationships.",
 		"approach": [
 			"Introduced coach marks + in-context cues for high-visibility changes",
 			"Directed messaging from concept to sign-off under tight timelines",
@@ -76,7 +71,7 @@
 		"tags": ["Systems", "Accessibility"],
 		"summary": "Directive rules for tooltips and popovers, embedded in the design system with accessible examples and limits.",
 		"images": ["images/tooltips-1.png", "images/tooltips-2.png"],
-		"body": "Summary\\nCreated definitive guidance for tooltip/popover usage, reducing misuse, improving accessibility, and embedding rules into the design system.\\n\\nRole\\nDefined principles and directive rules; integrated guidance into the design system.",
+		"body": "Summary\nCreated definitive guidance for tooltip/popover usage, reducing misuse, improving accessibility, and embedding rules into the design system.\n\nRole\nDefined principles and directive rules; integrated guidance into the design system.",
 		"approach": [
 			"Set a core principle: tooltips are supplemental, not essential",
 			"Moved guidance from suggestive → directive; clarified tooltip vs popover vs inline",
@@ -95,7 +90,7 @@
 		"tags": ["Analytics", "Insights"],
 		"summary": "Placeholder entry. We'll drop in the final case study once you're ready.",
 		"images": ["images/pi-1.png"],
-		"body": "Summary\\nComing soon — adding once work is complete.",
+		"body": "Summary\nComing soon — adding once work is complete.",
 		"approach": [],
 		"impact": []
 	}
